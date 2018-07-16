@@ -96,11 +96,25 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   # iterate through holiday_hash and print items such that your readout resembles:
-  
+  {
+     :winter => {
+       :christmas => ["Lights", "Wreath"],
+       :new_years => ["Party Hats"]
+     },
+     :summer => {
+       :fourth_of_july => ["Fireworks", "BBQ"]
+     },
+     :fall => {
+       :thanksgiving => ["Turkey"]
+     },
+     :spring => {
+       :memorial_day => ["BBQ"]
+     }
+   }
     holiday_hash.each do |season, holidays|
       puts "#{seasons.capitalize}:"
       holidays.each do |holiday, supplies|
-
+    
 end
 end
 end
